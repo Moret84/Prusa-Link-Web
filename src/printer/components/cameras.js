@@ -164,6 +164,19 @@ const updateSnapshot = (cameraId) => {
   });
 };
 
+// The stream is a never-ending multipart response: reassigning `src` on
+// every poll would tear it down and open a new one. The id the element is
+// already showing tells us whether anything actually has to change.
+const updateStreamSource = (pictureNode, cameraId) => {
+  if (pictureNode.dataset.streamingCameraId === `${cameraId}`) {
+    return;
+  }
+  pictureNode.dataset.streamingCameraId = `${cameraId}`;
+  pictureNode.src = cameraId
+    ? `${API_ROOT}/api/v1/cameras/${cameraId}/stream`
+    : "";
+};
+
 const updateCurrentCamera = (cameraId) => {
   if (!cameraId) {
     cameraId = currentCameraId;
@@ -172,18 +185,13 @@ const updateCurrentCamera = (cameraId) => {
   const snapshotPicture = document.getElementById("camera-snapshot-picture");
   const snapshotTime = document.getElementById("camera-snapshot-time");
   const snapshotName = document.getElementById("camera-snapshot-name");
-  const [id, name, time, url] = camera?.lastSnapshotAt
-    ? [
-        camera.id,
-        camera.config.name,
-        camera.lastSnapshotAt.toLocaleString(),
-        camera.lastSnapshotUrl,
-      ]
-    : [null, "-", "-", ""];
+  const [id, name, time] = camera?.lastSnapshotAt
+    ? [camera.id, camera.config.name, camera.lastSnapshotAt.toLocaleString()]
+    : [null, "-", "-"];
   currentCameraId = id;
 
   if (snapshotPicture) {
-    snapshotPicture.src = url;
+    updateStreamSource(snapshotPicture, id);
   }
   if (snapshotTime) {
     snapshotTime.innerText = time;
