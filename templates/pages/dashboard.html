@@ -56,3 +56,10 @@
   </li>
 </template>
 {% endif %}
+
+{% if env.WITH_CAMERA_STREAM %}
+<div class="main-wrapper component component-inline" id="camera-stream" hidden>
+  <p data-label="camera.title" class="txt-grey txt-md title">Cameras</p>
+  <img id="camera-stream-picture" class="camera__stream" alt="" />
+</div>
+{% endif %}
