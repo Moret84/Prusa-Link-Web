@@ -232,6 +232,7 @@
   "camera.name": "Kameraname",
   "camera.time": "Zeit der Momentaufnahme",
   "camera.title": "Kameras",
+  "camera.stream.title": "Kamera",
   "sort.by-date": "Datum",
   "sort.by-name": "Name",
   "sort.by-size": "Größe",

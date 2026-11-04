@@ -27,6 +27,7 @@
   "btn.reset": "Reset",
   "api_key.label": "API-sleutel",
   "camera.title": "Camera's",
+  "camera.stream.title": "Camera",
   "camera.name": "Cameranaam",
   "camera.time": "Snapshot-tijd",
   "camera.try-connect": "Geen camera gevonden. Wilt u het handmatig zoeken?",

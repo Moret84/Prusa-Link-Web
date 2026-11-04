@@ -29,6 +29,7 @@
   "btn.upgrade": "Atnaujinti",
   "api_key.label": "API raktas",
   "camera.title": "Kameros",
+  "camera.stream.title": "Kamera",
   "camera.name": "Kameros pavadinimas",
   "camera.time": "Momentinis vaizdas",
   "camera.try-connect": "Kamera nerasta. Ar norite patikrinti rankiniu būdu?",

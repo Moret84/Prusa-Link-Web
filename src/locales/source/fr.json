@@ -224,6 +224,7 @@
   "camera.name": "Nom de la Caméra",
   "camera.time": "Heure de la Capture",
   "camera.title": "Caméras",
+  "camera.stream.title": "Caméra",
   "sort.by-date": "Date",
   "sort.by-name": "Nom",
   "sort.by-size": "Taille",
