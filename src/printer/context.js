@@ -343,6 +343,7 @@ export class Context {
   updateCamera(camera) {
     this.camera = {
       id: camera?.id,
+      streamUrl: camera?.stream_url,
     };
   }
 

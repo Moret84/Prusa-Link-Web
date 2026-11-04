@@ -5,6 +5,7 @@
 import * as graph from "../components/temperature_graph";
 import upload from "../components/upload";
 import cameras from "../components/cameras";
+import cameraStream from "../components/camera_stream";
 import { translate } from "../../locale_provider";
 import * as job from "../components/job";
 import { getJson } from "../../auth";
@@ -40,6 +41,9 @@ const update = (context) => {
   upload.update(linkState);
   if (process.env['WITH_CAMERAS']) {
     cameras.update(context, null);
+  }
+  if (process.env['WITH_CAMERA_STREAM']) {
+    cameraStream.update(context);
   }
 };
 

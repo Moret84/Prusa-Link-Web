@@ -1372,6 +1372,10 @@ components:
         id:
           type: string
           example: "Ba1kmCbifTa8X"
+        stream_url:
+          type: string
+          description: MJPEG stream of the camera, served by another process
+          example: "http://prusalink.local:8081/stream"
 
     PrusaLinkPackage:
       type: object

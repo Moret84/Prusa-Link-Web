@@ -1915,6 +1915,11 @@ input .autoresize {
   display: block;
 }
 
+.camera__stream {
+  display: block;
+  max-width: 100%;
+}
+
 #cameras-snapshots {
   display: flex;
   flex-direction: row;
