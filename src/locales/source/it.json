@@ -213,6 +213,7 @@
   "camera.name": "Nome Fotocamera",
   "camera.time": "Tempo Istantanea",
   "camera.title": "Fotocamere",
+  "camera.stream.title": "Fotocamera",
   "sort.by-date": "Data",
   "sort.by-name": "Nome",
   "sort.by-size": "Dimensioni",

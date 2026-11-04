@@ -23,6 +23,7 @@
   "btn.upld-file": "Nahrát soubor",
   "btn.yes": "Ano",
   "camera.title": "Kamery",
+  "camera.stream.title": "Kamera",
   "camera.name": "Název kamery",
   "camera.time": "Čas snímku",
   "conn.err-conn": "Nelze se připojit k tiskárně",

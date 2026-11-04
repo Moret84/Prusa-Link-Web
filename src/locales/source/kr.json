@@ -222,6 +222,7 @@
   "camera.name": "카메라 명칭",
   "camera.time": "스냅샷 시간",
   "camera.title": "카메라",
+  "camera.stream.title": "카메라",
   "sort.by-date": "날짜로 정렬하기",
   "sort.by-name": "이름으로 정렬하기",
   "sort.by-size": "크기로 정렬하기",

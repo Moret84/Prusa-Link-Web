@@ -213,6 +213,7 @@
   "camera.name": "Nombre de la Cámara",
   "camera.time": "Hora de la Foto",
   "camera.title": "Cámaras",
+  "camera.stream.title": "Cámara",
   "sort.by-date": "Fecha",
   "sort.by-name": "Nombre",
   "sort.by-size": "Tamaño",
